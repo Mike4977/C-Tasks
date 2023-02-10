@@ -7,11 +7,11 @@
 // a = -3 b = 9 -> нетate for more information
 
 Console.WriteLine("Ведите число 1");
-int sqr = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ведите число 2");
-int number = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-if(sqr == number * number)
+if(numberA == numberB * numberB)
 {
     Console.WriteLine("Да");
 }
