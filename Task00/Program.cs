@@ -9,5 +9,5 @@
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
-int sqr = numbe * number;
+int sqr = number * number;
 Console.Write($"Квадра числа {number} = {sqr} ");
