@@ -11,11 +11,8 @@ Square(number);
 
 void Square (int num)
 {
-    int index = 1;
- 
-    while (index <= num)
+    for (int index = 1; index <= num; index++)
    { 
-    Console.WriteLine($"{index, 5}     {index * index, 5}");
-    index++;
+        Console.WriteLine($"{index, 5}{index * index, 5}");
    }
 }
