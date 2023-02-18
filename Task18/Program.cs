@@ -8,7 +8,7 @@ string num = Console.ReadLine();
 
 string quarter = Quarter(num);
 
-Console.WriteLine($"Диапазон координат соответствует {quarter}");
+Console.WriteLine($"Заданной четверти соответствует диапазон координат {quarter}");
 
 
 string Quarter(string number)
