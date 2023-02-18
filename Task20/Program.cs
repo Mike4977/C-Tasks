@@ -5,16 +5,28 @@
 // A (3,6); B (2,1) -> 5,09
 // A (7,-5); B (1,-1) -> 7,21
 
-Console.WriteLine("Введите координаты точки А ");
-Console.Write("XА: ");
-int xA = Convert.ToInt32(Console.ReadLine());
-Console.Write("YА: ");
-int yA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки В ");
-Console.Write("XВ: ");
-int xB = Convert.ToInt32(Console.ReadLine());
-Console.Write("YВ: ");
-int yB = Convert.ToInt32(Console.ReadLine());
+int Promt(string message)
+{
+    Console.WriteLine(message);
+    string value = (Console.ReadLine());
+    int result = Convert.ToInt32(value);
+    return result;
+}
+int xA = Promt ("Введите координату X точки А");
+int yA = Promt ("Введите координату Y точки А");
+int xB = Promt ("Введите координату Х точки B");
+int yB = Promt ("Введите координату Y точки B");
+
+// Console.WriteLine("Введите координаты точки А ");
+// Console.Write("XА: ");
+// int xA = Convert.ToInt32(Console.ReadLine());
+// Console.Write("YА: ");
+// int yA = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координаты точки В ");
+// Console.Write("XВ: ");
+// int xB = Convert.ToInt32(Console.ReadLine());
+// Console.Write("YВ: ");
+// int yB = Convert.ToInt32(Console.ReadLine());
 
 double distance = Distance (xA, yA, xB, yB);
 
