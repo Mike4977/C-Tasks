@@ -7,10 +7,10 @@
 
 Console.WriteLine("Введите натуральное число");
 int num = Convert.ToInt32(Console.ReadLine());
-int factorial = Factirial(num);
+int factorial = Factorial(num);
 Console.WriteLine($"Произведение чисел от 1 до {num} = {factorial}");
 
-int Factirial(int number)
+int Factorial(int number)
 {
     
     int res = 1;
