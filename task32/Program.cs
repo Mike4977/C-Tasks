@@ -27,18 +27,31 @@ void PrintArray(int[] arr)
     Console.Write("]");
 }
 
-int[] NewArray(int[] arr)
+void InversArray(int[] arr)
 {
-    int[] newArr = new int[arr.Length];
     for (int i = 0; i < arr.Length; i++)
     {
-        newArr[i] = arr[i] * -1;
+        arr[i] = arr[i] * -1;
     }
-    return newArr;
 }
 
 int[] array = FillArrayRndInt(12, -9, 9);
-int[] newArray = NewArray(array);
 PrintArray(array);
 Console.WriteLine();
-PrintArray(newArray);
+InversArray(array);
+PrintArray(array);
+
+// void InverseArray (int[] arr)
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         arr[i] = arr[i] * -1;
+//     }
+       
+// }
+
+// int[] array = CreateArrayRndInt(12,-9,9);
+// PrintArray(array);
+// Console.WriteLine();
+// InverseArray(array);
+// PrintArray(array);

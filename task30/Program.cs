@@ -18,13 +18,15 @@ void FillArray(int[] arr)
 
 void PrintArray(int[] arr)
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write(array[i] + " ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+		else Console.Write(array[i]);
     }
-    
+    Console.Write("]");
 }
-    
+   
 
 
 // Console.WriteLine("Сколько эллементов в массиве");
