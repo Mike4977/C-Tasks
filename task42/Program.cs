@@ -26,13 +26,15 @@ int Promt(string message)
 
 int BinaryNum(int num)
 {
+    int multiplier = 1;
     int bin = 0;
     while(num > 0)
     {
-        bin = (num % 2) + bin;
+        bin = bin + (num % 2) * multiplier;
         num /= 2;
-        bin *= 10;
+        multiplier *= 10;
     }
+    return bin;
 }
 int number = Promt ("Введите число");
 Console.WriteLine(BinaryNum(number));
