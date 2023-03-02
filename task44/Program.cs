@@ -38,8 +38,8 @@ void PrintArray (int[] arr)
     // Console.WriteLine("]");
 }
 
-int num=Promt("Введите число N: ");
-if(num < 2) Console.WriteLine("Ввели некорректное число");
+int num = Promt("Введите число N: ");
+if (num < 2) Console.WriteLine("Ввели некорректное число");
 else
 {
     int[] array = FibonacciNum(num);
