@@ -53,20 +53,4 @@ Console.WriteLine();
 PrintMatrix(array);
 
 
-// 
-// void ReplaceEvenElems(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i += 2)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j += 2)
-//         {
-//             array[i, j] *= array[i, j];
-//         }
-//     }
-// }
 
-// int[,] array2d = CreateMatrixRndInt(3, 4, -10, 10);
-// PrintMatrix(array2d);
-// ReplaceEvenElems(array2d);
-// Console.WriteLine();
-// PrintMatrix(array2d);
